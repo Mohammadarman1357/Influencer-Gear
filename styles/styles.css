@@ -109,7 +109,12 @@ body {
     align-items: center;
 }
 
-
+/* sponsor section styles */
+.sponsor-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    margin: 0px 165px 100px;
+}
 
 /* responsive styles */
 
@@ -131,10 +136,11 @@ body {
         margin: 14px 0px;
     }
 
-    .banner-content{
+    .banner-content {
         justify-items: center;
         margin-top: 0px;
     }
+
     .banner-image {
         width: 257px;
         height: 257px;
@@ -146,4 +152,13 @@ body {
         width: 202px;
         height: 190px;
     }
+
+    .sponsor-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0px 16px 50px;
+        justify-content: center;
+    }
+
 }
