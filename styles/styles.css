@@ -113,6 +113,7 @@ body {
 .sponsor-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
+    gap: 30px;
     margin: 0px 165px 100px;
     justify-items: center;
 }
