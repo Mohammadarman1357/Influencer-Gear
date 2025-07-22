@@ -1,9 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 .poppins-font {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.roboto-font {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 }
 
 body {
@@ -118,8 +134,124 @@ body {
     justify-items: center;
 }
 
-/* responsive styles */
+/* collection styles */
+.popular-collection {
+    margin: 0px 197px 100px;
+    justify-items: center;
+}
 
+.collection-header {
+    font-size: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.tripod {
+    grid-area: tripod;
+}
+
+.microphone {
+    grid-area: microphone;
+}
+
+.airbuds {
+    grid-area: airbuds;
+}
+
+.drone {
+    grid-area: drone;
+}
+
+.light-set {
+    grid-area: light-set;
+}
+
+.photoshot-set {
+    grid-area: photoshot-set;
+}
+
+.vlogging-camera {
+    grid-area: vlogging-camera;
+}
+
+.green-screen {
+    grid-area: green-screen;
+}
+
+.action-camera {
+    grid-area: action-camera;
+}
+
+.collection-container {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        "tripod microphone airbuds"
+        "drone light-set photoshot-set"
+        "vlogging-camera green-screen action-camera"
+    ;
+    gap: 30px;
+}
+
+.collection {
+    padding: 17px 15px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    width: 329px;
+    height: 476px;
+}
+
+.collection img {
+    width: 100%;
+}
+
+.collection-content {
+    margin-top: 0px;
+}
+
+.collection-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #18191F;
+    margin: 0px 0px 6px;
+}
+
+.collection-price {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #000000;
+    margin: 0;
+}
+
+.ratings {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.star img {
+    width: 16px;
+    height: 16px;
+}
+
+.star {
+    display: flex;
+}
+
+.collection-description {
+    margin-right: 119px;
+}
+
+.collection-rate,
+.collection-description {
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: #787885;
+}
+
+/* responsive styles */
 /* mobile device responsive */
 @media screen and (max-width:576px) {
 
@@ -159,8 +291,29 @@ body {
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
-        margin: 0px 16px 50px;
+        margin: 0px 16px;
         justify-content: center;
+    }
+
+    .popular-collection,
+    .collection-container {
+        display: grid;
+        grid-template-areas:
+            "tripod"
+            "microphone"
+            "airbuds"
+            "drone"
+            "light-set"
+            "photoshot-set"
+            "vlogging-camera"
+            "green-screen"
+            "action-camera"
+        ;
+    }
+
+    .popular-collection {
+        margin: 50px 16px;
+        justify-items: center;
     }
 
 }
