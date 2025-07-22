@@ -114,6 +114,7 @@ body {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     margin: 0px 165px 100px;
+    justify-items: center;
 }
 
 /* responsive styles */
